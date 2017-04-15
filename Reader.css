@@ -1,9 +1,11 @@
-body{
+body, html{
   font-family: Verdana, Arial, Helvetica, sans-serif;
   background-color: white;
   text-align:center;
   padding: 0 em;
   color:purple;
+  body, html {
+  margin: 0;
 }
 
 #myLogo{
