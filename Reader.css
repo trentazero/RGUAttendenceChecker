@@ -20,10 +20,11 @@ body, html{
   display: flex;
   align-items: stretch;
   justify-content: stretch;
-  height: 50%;
-  clear: both;
+  height: 30%;
   margin: 200;
+  clear: both;
 }
+
 .sidebar {
   background: #AC97AE;
   min-width: 60%;
