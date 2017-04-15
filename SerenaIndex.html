@@ -56,7 +56,16 @@
               <video id="preview"></video>
             </div>
           </div>
-          <input type="button" id="addStudent" value="Add New Student">
+          <div id="addDialog" title="Add">
+              <form action="">
+                  <label>Name:</label>
+                  <input id="name" name="name" type="text">
+                  <label>Student Id:</label>
+                  <input id="ID" name="ID" type="text">
+                  <input id="submit" type="button" value="Add">
+              </form>
+          </div>
+          <input type="addButton" id="addStudent" value="Add New Student">
           <input type="button" id="editStudent" value="Edit Student">
           <input type="button" id="removeStudent" value="Remove Student">
           <script type="text/javascript" src="app.js"></script>
