@@ -49,7 +49,7 @@
                 </ul>
                 <transition-group name="scans" tag="ul">
                     <li v-for="scan in scans" :key="scan.date" :title="scan.content">{{ scan.content }}</li>
-                    <li v-for="student in studentList" :key="student.id" :title="student.name">{{ student.name }}</li>
+                    <li v-for="student in studentList" :key="student.id" :title="student.name">{{ student.name + student.presence }}</li>
                 </transition-group>
             </section>
         </div>
