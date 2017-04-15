@@ -19,8 +19,14 @@ var app = new Vue({
   mounted: function () {
     var self = this;
     self.scanner = new Instascan.Scanner({ video: document.getElementById('preview'), scanPeriod: 5 });
+    // a continuous listener?
     self.scanner.addListener('scan', function (content, image) {
       self.scans.unshift({ date: +(Date.now()), content: content });
+      $.each(self.studentList, function(i, student) {
+        if (student.id == content){
+          student.presence = true;
+        }
+      });
     });
     Instascan.Camera.getCameras().then(function (cameras) {
       self.cameras = cameras;
