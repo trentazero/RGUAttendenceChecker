@@ -6,6 +6,10 @@ body, html{
   color:purple;
 }
 
+#dialog{
+  background-color: blue;
+}
+
 #myLogo{
   width: 25%;
 }
