@@ -18,5 +18,6 @@ function addStudent() {
 	var newStud = {id:$("#ID").val(), name:$("#studName").val(), presence: false};
 	console.log(newStud);
 	$("#dialog").dialog('close');
+	studentList.push(newStud);
 
 }

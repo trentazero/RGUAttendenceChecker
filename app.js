@@ -31,6 +31,10 @@ var app = new Vue({
     selectCamera: function (camera) {
       this.activeCameraId = camera.id;
       this.scanner.start(camera);
+    },
+    clearAll: function(){
+      studentList = [];
+      console.log(studentList);
     }
   }
 });
