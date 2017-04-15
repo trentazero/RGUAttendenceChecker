@@ -3,7 +3,7 @@
 .Heading ul { list-style-type: none;}
 
 .login ul { list-style-type: none; padding-left: 60px;}
-.login ul li { font-size: 20px; color: #772A7F}
+.login ul li { font-size: 20px; font-family: sans-serif; color: #772A7F}
 
 #text { height: 30px; font-size: 18px;}
 #cats { width:426.67px; height: 78.33px;}
