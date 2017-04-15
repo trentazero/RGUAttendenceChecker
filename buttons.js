@@ -9,7 +9,7 @@ studentList.push(dummy3);
 studentList.push(dummy4);
 
 $(function(){
-		$("#submitStudent").click.click(function(){
+		$("#submitStudent").click(function(){
 			addStudent();
 		});
 });
