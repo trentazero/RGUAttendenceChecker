@@ -4,7 +4,7 @@
 .Heading ul { list-style-type: none;}
 
 .login ul { list-style-type: none; padding-left: 60px;}
-.login { position: absolute; padding-top: 300px;}
+.login { position: absolute; padding-top: 500px;}
 .login ul li { font-size: 20px; font-family: sans-serif; color: #772A7F}
 
 .images ul li { list-style-type: none; display: inline;}
