@@ -22,11 +22,11 @@ body, html{
   justify-content: stretch;
   height: 50%;
   clear: both;
-  border-top: 1000px;
+  margin: 200;
 }
 .sidebar {
-  background: #eceff1;
-  min-width: 250px;
+  background: #AC97AE;
+  min-width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,7 +35,7 @@ body, html{
 .sidebar h2 {
   font-weight: normal;
   font-size: 1.0rem;
-  background: #607d8b;
+  background: #712978;
   color: #fff;
   padding: 10px;
   margin: 0;
@@ -57,7 +57,7 @@ body, html{
 }
 .cameras .active {
   font-weight: bold;
-  color: #009900;
+  color: ##009900;
 }
 .cameras a {
   color: #555;
