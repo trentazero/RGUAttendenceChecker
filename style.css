@@ -15,5 +15,9 @@
 
 #qrcode { padding-left: 600px; padding-top: 130px;}
 
+#dialog{
+  background-color: blue;
+}
+
 .footer-wrap { padding-top: 50px;}
 .footer-warp p { text-align: center; font-family: sans-serif;}
