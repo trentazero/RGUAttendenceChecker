@@ -15,7 +15,7 @@ $(function(){
 });
 
 function addStudent() {
-	var newStud = {id:$("#ID").value, name:$("#studName").value, presence: false};
+	var newStud = {id:$("#ID").val(), name:$("#studName").val(), presence: false};
 	console.log(newId);
 	$("#dialog").dialog("close");
 
