@@ -10,3 +10,6 @@
 #IMG2 { float: right; height: 236px; width: 500px;}
 
 #text { height: 30px; font-size: 18px;}
+
+footer { position: absolute; padding-left: 400px; }
+footer img { width:426.67px; height: 78.33px; }
