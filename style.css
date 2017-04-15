@@ -5,5 +5,6 @@
 .login ul { list-style-type: none; padding-left: 60px;}
 .login ul li { font-size: 20px; font-family: sans-serif; color: #772A7F}
 
-#text { height: 30px; font-size: 18px;}
-#cats { width:426.67px; height: 78.33px;}
+.images ul li { list-style-type: none; display: inline;}
+#IMG { width:426.67px; height: 78.33px;}
+#IMG2 { float: right; height: 236px; width: 500px;}
