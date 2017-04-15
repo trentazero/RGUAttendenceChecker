@@ -13,4 +13,4 @@
 
 #text { height: 30px; font-size: 18px;}
 
-#qrcode { padding-left: 600px; padding-top: 80px;}
+#qrcode { position: absolute; padding-left: 600px; padding-top: 80px;}
