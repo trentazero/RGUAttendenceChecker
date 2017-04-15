@@ -21,7 +21,8 @@ body, html{
   align-items: stretch;
   justify-content: stretch;
   height: 50%;
-  clear:both;
+  clear: both;
+  border-top: 1000px;
 }
 .sidebar {
   background: #eceff1;
