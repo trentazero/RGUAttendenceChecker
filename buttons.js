@@ -9,23 +9,13 @@ studentList.push(dummy3);
 studentList.push(dummy4);
 
 $(function(){
-	  $("#addStudent").click(function(){
+		$("#submitStudent").click.click(function(){
 			addStudent();
 		});
 });
 
 function addStudent() {
-	// add a list of items to the content div
-	//var items = ["hewey", "dewey", "louie"];
-
-	// build the html string for a <ul> list
-	var items_html = "<ul>";
-	for (var i=0; i < studentList.length; i++) {
-		item = studentList[i];
-		items_html += "<li>" + item.name + "</li>";
-	};
-	items_html += "</ul>";
-
-	$("#content").append(items_html);
+	var newStud = {id:$("#ID").value, name:$("#studName").value, presence: false};
+	console.log(newId);
 
 }
