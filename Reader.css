@@ -1,0 +1,16 @@
+body{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color: white;
+  text-align:center;
+  padding: 0 em;
+  color:purple;
+}
+
+#myLogo{
+  width: 25%;
+}
+
+#wings{
+  width: 22%;
+  margin: -2.1%;
+}
