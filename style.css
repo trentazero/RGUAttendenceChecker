@@ -1,9 +1,10 @@
-.Heading { color: #686868; font-family: sans-serif; padding-left: 20px;}
+.Heading { position: absolute; color: #686868; font-family: sans-serif; padding-left: 20px;}
 .Heading ul li h1 { font-size: 75px; padding-top: 60px;}
 .Heading ul li h2 { font-size: 29px;}
 .Heading ul { list-style-type: none;}
 
 .login ul { list-style-type: none; padding-left: 60px;}
+.login { position: absolute; padding-top: 300px;}
 .login ul li { font-size: 20px; font-family: sans-serif; color: #772A7F}
 
 .images ul li { list-style-type: none; display: inline;}
