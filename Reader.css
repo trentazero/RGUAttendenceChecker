@@ -79,11 +79,10 @@ body, html{
   font-style: italic;
 }
 .preview-container {
-  border-top: 50px;
   flex-direction: column;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
   display: flex;
-  width: 20%;
+  width: 100%;
   overflow: hidden;
 }
