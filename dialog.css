@@ -57,6 +57,7 @@ input[type=submit]:hover {
 }
 
 div.container {
+    clear: both;
     width: 960px;
     height: 610px;
     margin: 50px auto;
