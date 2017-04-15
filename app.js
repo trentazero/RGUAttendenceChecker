@@ -14,7 +14,8 @@ var app = new Vue({
     scanner: null,
     activeCameraId: null,
     cameras: [],
-    scans: []
+    scans: [],
+    studentList: studentList
   },
   mounted: function () {
     var self = this;
