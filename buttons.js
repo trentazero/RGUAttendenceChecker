@@ -27,7 +27,7 @@ function addStudent() {
     studentList.push(newStud); */
     var newId = $("#ID").val();
     var newName = $("#studName").val();
-    if (newId === "") {
+    if (newName === "") {
         alert("Name field cannot be empty!");
     } else if (newId === "") {
         alert("Id field cannot be empty!");
