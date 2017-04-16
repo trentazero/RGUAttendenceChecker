@@ -116,7 +116,8 @@ var app = new Vue({
               var student = this.studentList[i];
               printText += "id: " + student.id + " name: " + student.name + " present today " + student.presence + "\n";
             }
-            printText += statistics();
+            var percentage = Math.round((studCounter / studentList.length) * 10000) / 100;
+            printText += studCounter + "/" + studentList.length + " - " + percentage + "%";
             pdf.text(20, 50, printText);
             pdf.save('attendence_sheet.pdf');
         }
