@@ -69,6 +69,7 @@ var app = new Vue({
       studentList.push(newSt);
     },
     clearAll: function(){
+      studCounter = 0;
       while(this.scans.length > 0) {
         this.scans.pop();
       }
