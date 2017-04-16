@@ -8,7 +8,7 @@ studentList.push(dummy2);
 studentList.push(dummy3);
 studentList.push(dummy4);
 
-var studCounter = { counter : 0 };
+//var studCounter = { counter : 0 };
 
 
 
