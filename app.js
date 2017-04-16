@@ -22,6 +22,7 @@ var app = new Vue({
   },
   mounted: function () {
     var self = this;
+    var studCounter = 0;
     self.scanner = new Instascan.Scanner({ video: document.getElementById('preview'), scanPeriod: 5 });
     // a continuous listener?
     self.scanner.addListener('scan', function (content, image) {
@@ -30,6 +31,7 @@ var app = new Vue({
       $.each(self.studentList, function(i, student) {
         if (student.id == content){
           student.presence = "[V]";
+          studCounter++;
         }
       });
     });
@@ -60,12 +62,12 @@ var app = new Vue({
     // try
     statistics: function(){
       var output = "Students attendence: ";
-      var studCounter = 0;
+      /*
       $.each(self.studentList, function(i, student){
         if (student.id == content){
           studCounter++;
         }
-      });
+      }); */
       output += studCounter + "/" + studentList.length;
       return output;
     }
