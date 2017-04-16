@@ -69,22 +69,16 @@ var app = new Vue({
       studentList.push(newSt);
     },
     clearAll: function(){
-<<<<<<< HEAD
-<<<<<<< HEAD
       scans = [];
       studentList = [];
-=======
       while(scans.length > 0) {
         scans.pop();
-=======
       while(this.scans.length > 0) {
         this.scans.pop();
->>>>>>> origin/master
       }
       while(this.studentList.length > 0) {
         this.studentList.pop();
       }
->>>>>>> origin/master
       console.log("clearAll start");
     }
   }
