@@ -8,7 +8,7 @@ studentList.push(dummy2);
 studentList.push(dummy3);
 studentList.push(dummy4);
 
-//var studCounter = { counter : 0 };
+var studCounter = 0;
 
 
 
@@ -20,8 +20,7 @@ var app = new Vue({
     cameras: [],
     scans: [],
     // luke addon
-    studentList: studentList,
-    studCounter : 0
+    studentList: studentList
   },
   mounted: function () {
     var self = this;
@@ -34,8 +33,8 @@ var app = new Vue({
       $.each(self.studentList, function(i, student) {
         if (student.id == content){
           student.presence = "[V]";
-          this.studCounter++;
-          console.log(this.studCounter);
+          studCounter++;
+          console.log(studCounter);
         }
       });
     });
@@ -72,7 +71,7 @@ var app = new Vue({
           studCounter++;
         }
       }); */
-      output += this.studCounter + "/" + studentList.length;
+      output += studCounter + "/" + studentList.length;
       return output;
     }
 
