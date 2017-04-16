@@ -21,9 +21,7 @@ var app = new Vue({
     scans: [],
     // luke addon
     studentList: studentList,
-    studCounter : function(){
-      return studCounter;
-    };
+    studCounter : 0
   },
   mounted: function () {
     var self = this;
