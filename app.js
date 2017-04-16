@@ -109,10 +109,10 @@ var app = new Vue({
             var pdf = new jsPDF();
             pdf.setFont('helvetica')
             pdf.setFontType('bold')
-            pdf.text(20, 50, 'Attendence Sheet');
+            pdf.text(20, 50, 'Attendence Sheet \n');
             for(i= 0; i < this.studentList.length; i++){
               var student = this.studentList[i];
-              var printText = "id: " + student.id + " name: " + student.name + student.presence;
+              var printText = "id: " + student.id + " name: " + student.name + student.presence + "\n";
               pdf.text(20, 50, printText);
             }
             pdf.save('attendence_sheet.pdf');
