@@ -112,7 +112,7 @@ var app = new Vue({
             pdf.text(20, 50, 'Attendence Sheet');
             for(i= 0; i < this.studentList.length; i++){
               var student = this.studentList[i];
-              var printText = "id: " student.id + " name: " + student.name + student.presence;
+              var printText = "id: " + student.id + " name: " + student.name + student.presence;
               pdf.text(20, 50, printText);
             }
             pdf.save('attendence_sheet.pdf');
