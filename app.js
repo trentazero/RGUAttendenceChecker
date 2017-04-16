@@ -106,7 +106,7 @@ var app = new Vue({
             console.log("clearAll start");
         },
         printPDF: function() {
-            var pdf = new new jsPDF();
+            var pdf = new jsPDF();
             pdf.text(30, 30, 'Hello world!');
             pdf.save('hello_world.pdf');
         }
