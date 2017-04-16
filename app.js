@@ -86,9 +86,20 @@ var app = new Vue({
             return output;
         },
         addStudentV: function() {
+
+            /*
+            if ((elText.value.length != 7) && (elText.value.length != 0)) {
+                    alert("Wrong Student ID")
+                    console.log("hey");
+                    elText.focus();
+                    elText.value = "";
+                }
+            */
+            var newId = $("#ID").val();
+            var newName = $("#studName").val();
             var newSt = {
-                id: $("#ID").val(),
-                name: $("#studName").val(),
+                id: newId,
+                name: newName,
                 presence: "[ ]"
             }
             studentList.push(newSt);
@@ -110,11 +121,11 @@ var app = new Vue({
             pdf.setFont('helvetica')
             pdf.setFontType('bold')
             var d = new Date();
-            var today = d.getDate() + "/" + (d.getMonth()+1) + "/" + d.getFullYear() + " " + d.getHours()+ ":" + d.getMinutes() +"\n";
+            var today = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + "\n";
             var printText = "Attendence Sheet for " + today + " \n";
-            for(i= 0; i < this.studentList.length; i++){
-              var student = this.studentList[i];
-              printText += "id: " + student.id + " name: " + student.name + " present today " + student.presence + "\n";
+            for (i = 0; i < this.studentList.length; i++) {
+                var student = this.studentList[i];
+                printText += "id: " + student.id + " name: " + student.name + " present today " + student.presence + "\n";
             }
             var percentage = Math.round((studCounter / studentList.length) * 10000) / 100;
             printText += "\nAttendence: " + studCounter + "/" + studentList.length + " - " + percentage + "%";
