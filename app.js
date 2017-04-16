@@ -65,7 +65,7 @@ var app = new Vue({
     // try
     statistics: function(){
       var output = "Students attendence: ";
-      var percentage = (studCounter/studentList.length)*100;
+      var percentage = Math.round((studCounter/studentList.length)*10000)/100;
       output += studCounter + "/" + studentList.length + " - " + percentage + "%";
       return output;
     },
