@@ -52,6 +52,7 @@
 
                     <!-- v-if="scan.content === student.id" -->
                     <li v-for="student in studentList"  :key="student.id" :title="student.name">{{ student.name + " " + student.id + " " + student.presence}}</li>
+                    <li>{{ "Do I work?"}}</li>
 
                 </transition-group>
             </section>
@@ -65,7 +66,7 @@
     <input type="button" id="addStudent" value="Add New Student">
     <input type="button" id="editStudent" value="Edit Student">
     <input type="button" id="removeStudent" value="Remove Student">
-  
+
     <div class="container">
         <div class="main">
             <div id="dialog" title="Add">

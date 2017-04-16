@@ -8,6 +8,8 @@ studentList.push(dummy2);
 studentList.push(dummy3);
 studentList.push(dummy4);
 
+
+
 var app = new Vue({
   el: '#app',
   data: {
@@ -54,6 +56,19 @@ var app = new Vue({
     clearAll: function(){
       studentList = [];
       console.log(studentList);
+    },
+    // try
+    statistics: function(){
+      var output = "Students attendence: ";
+      var studCounter = 0;
+      $.each(self.studentList, function(i, student){
+        if (student.id == content){
+          studCounter++;
+        }
+      });
+      output += studCounter + "/" + studentList.length;
+      return output;
     }
+
   }
 });
