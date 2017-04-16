@@ -63,6 +63,7 @@ var app = new Vue({
       var percentage = Math.round((studCounter/studentList.length)*10000)/100;
       output += studCounter + "/" + studentList.length + " - " + percentage + "%";
       return output;
+      studCounter = 0;
     },
     addStudentV: function(){
       var newSt = { id: $("#ID").val(), name :$("#studName").val(), presence: "[ ]"}
