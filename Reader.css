@@ -27,18 +27,19 @@ body, html{
   margin: -2.1%;
 }
 
-#littleAdd, #addStudent, #clearStudent{
+#littleAdd, #addStudent, #clearStudent, #printBtn{
   background-color: white;
   color: purple;
   text-shadow: 10;
   border-style: solid;
   outline: none;
   border-color: white;
-  border-width: 15;
+  border-width: 35;
   border-radius: 10px;
   -moz-border-radius: 10px; /* firefox */
   -webkit-border-radius: 10px; /* safari, chrome */
-
+  text-decoration-style: solid;
+  font-weight: bold;
 }
 
 #app {
