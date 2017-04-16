@@ -34,8 +34,8 @@ var app = new Vue({
       $.each(self.studentList, function(i, student) {
         if (student.id == content){
           student.presence = "[V]";
-          studCounter++;
-          console.log(studCounter);
+          this.studCounter++;
+          console.log(this.studCounter);
         }
       });
     });
