@@ -16,6 +16,7 @@ $(function(){
 */
 
 function addStudent() {
+  /*
     var newStud = {
         id: $("#ID").val(),
         name: $("#studName").val(),
@@ -23,12 +24,21 @@ function addStudent() {
     };
     console.log(newStud);
     $("#dialog").dialog('close');
-    studentList.push(newStud);
-}
-/*
-function clearAll() {
-    while (studentList.length > 0) {
-        studentList.pop();
-        console.log("popping");
+    studentList.push(newStud); */
+    var newId = $("#ID").val();
+    var newName = $("#studName").val();
+    if (newId === "") {
+        alert("Name field cannot be empty!");
+    } else if (newId === "") {
+        alert("Id field cannot be empty!");
+    } else if (newId.length != 7) {
+        alert("Id field must contain 7 numeric characters!");
+    } else {
+        var newSt = {
+            id: newId,
+            name: newName,
+            presence: "[ ]"
+        }
+        studentList.push(newSt);
     }
-}*/
+}
