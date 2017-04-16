@@ -65,16 +65,13 @@ var app = new Vue({
     // try
     statistics: function(){
       var output = "Students attendence: ";
-      /*
-      $.each(self.studentList, function(i, student){
-        if (student.id == content){
-          studCounter++;
-        }
-      }); */
       var percentage = (studCounter/studentList.length)*100;
-      output += studCounter + "/" + studentList.length + " " + percentage + "%";
+      output += studCounter + "/" + studentList.length + " - " + percentage + "%";
       return output;
+    },
+    addStudentV: function(){
+      var newSt = { id: $("#ID").val(), name :$("#studName").val(), presence: "[ ]"}
+      studentList.push(newSt);
     }
-
   }
 });
