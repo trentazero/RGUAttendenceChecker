@@ -11,6 +11,11 @@ body, html{
   color: white;
   border-left-style: solid;
   border-right-style: dotted;
+  outline: none;
+  border-bottom: grey;
+  border-radius: 10px;
+  -moz-border-radius: 10px; /* firefox */
+  -webkit-border-radius: 10px; /* safari, chrome */
 }
 
 #myLogo{
