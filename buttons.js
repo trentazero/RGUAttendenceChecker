@@ -31,7 +31,7 @@ function addStudent() {
         alert("Name field cannot be empty!");
     } else if (newId === "") {
         alert("Id field cannot be empty!");
-    } else if (newId.length != 7) {
+    } else if (newId.length != 7 && isNaN(newId)) {
         alert("Id field must contain 7 numeric characters!");
     } else {
         var newSt = {
