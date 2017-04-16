@@ -107,8 +107,12 @@ var app = new Vue({
         },
         printPDF: function() {
             var pdf = new jsPDF();
-            pdf.text(30, 30, 'Hello world!');
-            pdf.save('hello_world.pdf');
+            pdf.setFont('helvetica')
+            pdf.setFontType('bold')
+            for(i=0; i < this.stidentList.length; i++){
+              pdf.text(20, 50, 'Hello world!');
+            }
+            pdf.save('attendence_sheet.pdf');
         }
     }
 });
