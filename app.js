@@ -67,11 +67,11 @@ var app = new Vue({
     addStudentV: function(){
       var newSt = { id: $("#ID").val(), name :$("#studName").val(), presence: "[ ]"}
       studentList.push(newSt);
-      console.log(newSt);
     },
     clearAll: function(){
       scans = [];
       studentList = [];
+      console.log("clearAll start");
     }
   }
 });
