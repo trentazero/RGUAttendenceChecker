@@ -69,7 +69,7 @@ var app = new Vue({
           studCounter++;
         }
       }); */
-      output += studCounter + "/" + studentList.length;
+      output += this.studCounter + "/" + studentList.length;
       return output;
     }
 
