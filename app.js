@@ -11,7 +11,6 @@ studentList.push(dummy4);
 var studCounter = 0;
 
 
-
 var app = new Vue({
   el: '#app',
   data: {
@@ -72,8 +71,6 @@ var app = new Vue({
       studCounter = 0;
       scans = [];
       studentList = [];
-      while(scans.length > 0) {
-        scans.pop();
       while(this.scans.length > 0) {
         this.scans.pop();
       }
