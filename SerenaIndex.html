@@ -62,25 +62,26 @@
         <div class="preview-container">
             <video id="preview"></video>
         </div>
-    </div>
+        <input type="button" id="addStudent" value="Add New Student">
+        <input type="button" id="editStudent" value="Edit Student">
+        <input type="button" id="removeStudent" value="Remove Student">
 
-    <input type="button" id="addStudent" value="Add New Student">
-    <input type="button" id="editStudent" value="Edit Student">
-    <input type="button" id="removeStudent" value="Remove Student">
+        <div class="container">
+            <div class="main">
+                <div id="dialog" title="Add">
 
-    <div class="container">
-        <div class="main">
-            <div id="dialog" title="Add">
+                        <label>Name:</label>
+                        <input id="studName" name="name" type="text">
+                        <label>Student Id:</label>
+                        <input id="ID" name="ID" type="text">
+                        <button v-on:click="{{addStudentV()}}">Add</button>
 
-                    <label>Name:</label>
-                    <input id="studName" name="name" type="text">
-                    <label>Student Id:</label>
-                    <input id="ID" name="ID" type="text">
-                    <button v-on:click="{{addStudentV()}}">Add</button>
-
+                </div>
             </div>
         </div>
     </div>
+
+
 
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="addDialog.js"></script>
