@@ -49,7 +49,7 @@
                     <li class="empty">No scans yet</li>
                 </ul>
                 <transition-group name="scans" tag="ul">
-                    <li v-for="scan in scans" :key="scan.date" :title="scan.content">{{ scan.content }}</li>
+                    <!--<li v-for="scan in scans" :key="scan.date" :title="scan.content">{{ scan.content }}</li> -->
 
                     <!-- v-if="scan.content === student.id" -->
                     <li v-for="student in studentList"  :key="student.id" :title="student.name">{{ student.name + " " + student.id + " " + student.presence}}</li>
