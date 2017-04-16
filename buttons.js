@@ -40,5 +40,6 @@ function addStudent() {
             presence: "[ ]"
         }
         studentList.push(newSt);
+        $("#dialog").dialog('close');
     }
 }
