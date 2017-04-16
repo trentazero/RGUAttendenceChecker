@@ -52,7 +52,8 @@
 
                     <!-- v-if="scan.content === student.id" -->
                     <li v-for="student in studentList"  :key="student.id" :title="student.name">{{ student.name + " " + student.id + " " + student.presence}}</li>
-                    <li key="'just stats'">{{ "Do I work?"}}</li>
+                    <!-- <li key="'just stats'">{{ "Do I work?"}}</li> -->
+                    <li key="'just stats'">{{ statistics() }}</li>
 
                 </transition-group>
             </section>
