@@ -58,11 +58,6 @@ var app = new Vue({
       this.activeCameraId = camera.id;
       this.scanner.start(camera);
     },
-    clearAll: function(){
-      studentList = [];
-      console.log(studentList);
-    },
-    // try
     statistics: function(){
       var output = "Students attendence: ";
       var percentage = Math.round((studCounter/studentList.length)*10000)/100;

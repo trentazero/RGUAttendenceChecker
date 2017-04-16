@@ -20,5 +20,8 @@ function addStudent() {
 	console.log(newStud);
 	$("#dialog").dialog('close');
 	studentList.push(newStud);
+}
 
+function clearAll(){
+  studentList = [];
 }
