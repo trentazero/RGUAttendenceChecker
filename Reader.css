@@ -9,6 +9,8 @@ body, html{
 #dialog{
   background-color: purple;
   color: white;
+  border-left-style: solid;
+  border-right-style: dotted;
 }
 
 #myLogo{
