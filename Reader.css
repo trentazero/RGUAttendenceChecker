@@ -27,6 +27,20 @@ body, html{
   margin: -2.1%;
 }
 
+#littleAdd, #addStudent, #clearStudent{
+  background-color: white;
+  color: purple;
+  text-shadow: 10;
+  border-style: solid;
+  outline: none;
+  border-color: white;
+  border-width: 15;
+  border-radius: 10px;
+  -moz-border-radius: 10px; /* firefox */
+  -webkit-border-radius: 10px; /* safari, chrome */
+
+}
+
 #app {
   background: #263238;
   display: flex;
