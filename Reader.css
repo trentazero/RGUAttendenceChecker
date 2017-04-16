@@ -7,7 +7,8 @@ body, html{
 }
 
 #dialog{
-  background-color: blue;
+  background-color: purple;
+  color: white;
 }
 
 #myLogo{

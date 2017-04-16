@@ -70,6 +70,10 @@ var app = new Vue({
     },
     clearAll: function(){
       studCounter = 0;
+      scans = [];
+      studentList = [];
+      while(scans.length > 0) {
+        scans.pop();
       while(this.scans.length > 0) {
         this.scans.pop();
       }
