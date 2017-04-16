@@ -110,8 +110,8 @@ var app = new Vue({
             console.log("i work");
             pdf.setFont('helvetica')
             pdf.setFontType('bold')
-            for(i=0; i < this.studentList.length; i++){
-              pdf.text(20, 50, 'Hello world!');
+            for(i= 0; i < this.studentList.length; i++){
+              pdf.text(20, 50, 'A student name');
             }
             pdf.save('attendence_sheet.pdf');
         }
