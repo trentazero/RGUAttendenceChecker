@@ -71,7 +71,8 @@ var app = new Vue({
           studCounter++;
         }
       }); */
-      output += studCounter + "/" + studentList.length;
+      var percentage = (studCounter/studentList.length)*100;
+      output += studCounter + "/" + studentList.length + " " + percentage + "%";
       return output;
     }
 
