@@ -107,6 +107,7 @@ var app = new Vue({
         },
         printPDF: function() {
             var pdf = new jsPDF();
+            console.log("i work");
             pdf.setFont('helvetica')
             pdf.setFontType('bold')
             for(i=0; i < this.stidentList.length; i++){
