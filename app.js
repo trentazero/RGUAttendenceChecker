@@ -18,11 +18,12 @@ var app = new Vue({
     cameras: [],
     scans: [],
     // luke addon
-    studentList: studentList
+    studentList: studentList,
+    studCounter : 0;
   },
   mounted: function () {
     var self = this;
-    var studCounter = 0;
+
     self.scanner = new Instascan.Scanner({ video: document.getElementById('preview'), scanPeriod: 5 });
     // a continuous listener?
     self.scanner.addListener('scan', function (content, image) {
