@@ -16,12 +16,19 @@ $(function(){
 */
 
 function addStudent() {
-	var newStud = {id:$("#ID").val(), name:$("#studName").val(), presence: "[ ]"};
-	console.log(newStud);
-	$("#dialog").dialog('close');
-	studentList.push(newStud);
+    var newStud = {
+        id: $("#ID").val(),
+        name: $("#studName").val(),
+        presence: "[ ]"
+    };
+    console.log(newStud);
+    $("#dialog").dialog('close');
+    studentList.push(newStud);
 }
 
-function clearAll(){
-  studentList = [];
+function clearAll() {
+    while (studentList.length > 0) {
+        studentList.pop();
+        console.log("popping");
+    }
 }
