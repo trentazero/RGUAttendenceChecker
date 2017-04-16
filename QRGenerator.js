@@ -3,13 +3,12 @@ var qrcode = new QRCode("qrcode");
 function makeCode () {
     var elText = document.getElementById("text");
 
-    /*
-    if (!elText.value) {
-        alert("Input a text");
+if ((elText.value.length != 7) && (elText.value.length != 0)) {
+        alert("Wrong Student ID")
+        console.log("hey");
         elText.focus();
-        return;
+        elText.value = "";
     }
-    */
 
     qrcode.makeCode(elText.value);
 }

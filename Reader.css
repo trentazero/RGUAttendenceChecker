@@ -6,6 +6,11 @@ body, html{
   color:purple;
 }
 
+#dialog{
+  background-color: purple;
+  color: white;
+}
+
 #myLogo{
   width: 25%;
 }
@@ -20,11 +25,10 @@ body, html{
   display: flex;
   align-items: stretch;
   justify-content: stretch;
-  height: 30%;
-  margin: 200;
+  height: 50%;
   clear: both;
+  margin: 200;
 }
-
 .sidebar {
   background: #AC97AE;
   min-width: 60%;
