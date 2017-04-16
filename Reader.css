@@ -9,10 +9,9 @@ body, html{
 #dialog{
   background-color: purple;
   color: white;
-  border-left-style: solid;
-  border-right-style: dotted;
+  border-style: solid;
   outline: none;
-  border-bottom: grey;
+  border-color: grey;
   border-radius: 10px;
   -moz-border-radius: 10px; /* firefox */
   -webkit-border-radius: 10px; /* safari, chrome */
