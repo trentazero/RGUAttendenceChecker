@@ -80,7 +80,7 @@ var app = new Vue({
             this.scanner.start(camera);
         },
         statistics: function() {
-            var output = "Students attendence: ";
+            var output = "Students attendance: ";
             var percentage = Math.round((studCounter / studentList.length) * 10000) / 100;
             output += studCounter + "/" + studentList.length + " - " + percentage + "%";
             return output;
@@ -97,12 +97,20 @@ var app = new Vue({
             */
             var newId = $("#ID").val();
             var newName = $("#studName").val();
-            var newSt = {
-                id: newId,
-                name: newName,
-                presence: "[ ]"
+            if (newId === "") {
+                alert("Name field cannot be empty!");
+            } else if (newId === "") {
+                alert("Id field cannot be empty!");
+            } else if (newId.length != 7) {
+                alert("Id field must contain 7 numeric characters!");
+            } else {
+                var newSt = {
+                    id: newId,
+                    name: newName,
+                    presence: "[ ]"
+                }
+                studentList.push(newSt);
             }
-            studentList.push(newSt);
         },
         clearAll: function() {
             studCounter = 0;
@@ -122,13 +130,13 @@ var app = new Vue({
             pdf.setFontType('bold')
             var d = new Date();
             var today = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + "\n";
-            var printText = "Attendence Sheet for " + today + " \n";
+            var printText = "Attendance Sheet for " + today + " \n";
             for (i = 0; i < this.studentList.length; i++) {
                 var student = this.studentList[i];
                 printText += "id: " + student.id + " name: " + student.name + " present today " + student.presence + "\n";
             }
             var percentage = Math.round((studCounter / studentList.length) * 10000) / 100;
-            printText += "\nAttendence: " + studCounter + "/" + studentList.length + " - " + percentage + "%";
+            printText += "\nAttendance: " + studCounter + "/" + studentList.length + " - " + percentage + "%";
             pdf.text(20, 50, printText);
             pdf.save('attendence_sheet.pdf');
         }
