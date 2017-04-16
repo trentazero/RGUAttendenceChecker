@@ -110,8 +110,8 @@ var app = new Vue({
             pdf.setFont('helvetica')
             pdf.setFontType('bold')
             var d = new Date();
-            var today = d.getDate() + "/" + (d.getMonth()+1) + "/" + d.getFullYear();
-            var printText = "Attendence Sheet for  " + today + " \n";
+            var today = d.getDate() + "/" + (d.getMonth()+1) + "/" + d.getFullYear() + " " + d.getHours()+ ":" + d.getMinutes();
+            var printText = "Attendence Sheet for " + today + " \n";
             for(i= 0; i < this.studentList.length; i++){
               var student = this.studentList[i];
               printText += "id: " + student.id + " name: " + student.name + " present today " + student.presence + "\n";
