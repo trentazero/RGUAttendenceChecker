@@ -8,6 +8,8 @@ studentList.push(dummy2);
 studentList.push(dummy3);
 studentList.push(dummy4);
 
+var studCounter = { counter : 0 };
+
 
 
 var app = new Vue({
@@ -19,7 +21,9 @@ var app = new Vue({
     scans: [],
     // luke addon
     studentList: studentList,
-    studCounter : 0;
+    studCounter : function(){
+      return studCounter;
+    };
   },
   mounted: function () {
     var self = this;
@@ -69,7 +73,7 @@ var app = new Vue({
           studCounter++;
         }
       }); */
-      output += this.studCounter + "/" + studentList.length;
+      output += studCounter() + "/" + studentList.length;
       return output;
     }
 
