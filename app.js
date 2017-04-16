@@ -15,6 +15,7 @@ var app = new Vue({
     activeCameraId: null,
     cameras: [],
     scans: [],
+    // luke addon
     studentList: studentList
   },
   mounted: function () {
@@ -23,6 +24,7 @@ var app = new Vue({
     // a continuous listener?
     self.scanner.addListener('scan', function (content, image) {
       self.scans.unshift({ date: +(Date.now()), content: content });
+      // luke addon
       $.each(self.studentList, function(i, student) {
         if (student.id == content){
           student.presence = true;
