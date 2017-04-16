@@ -25,10 +25,10 @@ function addStudent() {
     $("#dialog").dialog('close');
     studentList.push(newStud);
 }
-
+/*
 function clearAll() {
     while (studentList.length > 0) {
         studentList.pop();
         console.log("popping");
     }
-}
+}*/
