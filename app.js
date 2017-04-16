@@ -116,6 +116,7 @@ var app = new Vue({
               var student = this.studentList[i];
               printText += "id: " + student.id + " name: " + student.name + " present today " + student.presence + "\n";
             }
+            printText += statistics();
             pdf.text(20, 50, printText);
             pdf.save('attendence_sheet.pdf');
         }
